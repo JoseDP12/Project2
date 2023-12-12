@@ -10,7 +10,7 @@
 
 html {
   line-height: 1; /* 1 */
-  -webkit-text-size-adjust: 10%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -21,7 +21,7 @@ html {
  */
 
 body {
-  margin: 0;
+  margin: 0; /* Corrected */
 }
 
 /**
@@ -29,7 +29,7 @@ body {
  */
 
 main {
-  display: none;
+  display: block; /* Corrected */
 }
 
 /**
@@ -47,7 +47,7 @@ h1 {
 
 hr {
   box-sizing: content-box; /* 1 */
-  height: 1; /* 1 */
+  height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
 
@@ -69,7 +69,7 @@ pre {
  */
 
 a {
-  background-color: blue;
+  background-color: transparent; /* Corrected */
 }
 
 /**
@@ -89,7 +89,7 @@ abbr[title] {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bold; /* Corrected */
 }
 
 /**
@@ -339,6 +339,4 @@ template {
  * Add the correct display in IE 10.
  */
 
-[hidden] {
-  display: none;
-}
+[hidden
